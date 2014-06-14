@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="apps.boilerplate" path="/apps/boilerplate/">
+    <key type="b" name="dark-theme">
+      <default>false</default>
+      <summary>Enable Dark Theme</summary>
+      <description>Enables the gtk dark theme</description>
+    </key>
+  </schema>
+</schemalist>
