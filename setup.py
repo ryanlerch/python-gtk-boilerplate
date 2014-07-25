@@ -3,6 +3,12 @@
 from setuptools import setup, find_packages
 
 my_data_files = [
+    ('/usr/share/icons/hicolor/scalable/apps/', ['boilerplate/data/icons/scalable/boilerplate.svg']),
+    ('/usr/share/icons/hicolor/16x16/apps/', ['boilerplate/data/icons/16x16/boilerplate-16.png']),
+    ('/usr/share/icons/hicolor/24x24/apps/', ['boilerplate/data/icons/24x24/boilerplate-24.png']),
+    ('/usr/share/icons/hicolor/32x32/apps/', ['boilerplate/data/icons/32x32/boilerplate-32.png']),
+    ('/usr/share/icons/hicolor/48x48/apps/', ['boilerplate/data/icons/48x48/boilerplate-48.png']),
+    ('/usr/share/icons/hicolor/64x64/apps/', ['boilerplate/data/icons/64x64/boilerplate-64.png']),
     ('/usr/share/applications/', ['boilerplate.desktop']),
     ('/usr/share/glib-2.0/schemas/', ['apps.boilerplate.gschema.xml']),
     ]

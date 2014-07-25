@@ -6,9 +6,12 @@ import sys
 class MyWindow(Gtk.ApplicationWindow):
 	def __init__(self, app, appname, settings):
 		Gtk.Window.__init__(self, title=appname, application=app)
+		self.icontheme = Gtk.IconTheme.get_default()
+	        self.logo = self.icontheme.load_icon(appname, -1, Gtk.IconLookupFlags.FORCE_SVG)
+        	self.set_default_icon(self.logo)
 		hb = Gtk.HeaderBar()
 		hb.props.show_close_button = True
-		hb.props.title = appname
+		hb.props.title = "BoilerPlate"
 		print settings.get_boolean("dark-theme")
 		self.set_titlebar(hb)
 
@@ -18,11 +21,13 @@ class MyAboutDialog(Gtk.AboutDialog):
 		Gtk.AboutDialog.__init__(self)
 		self.set_program_name(appname)
                 self.set_transient_for(parent)
+		self.icontheme = Gtk.IconTheme.get_default()
+		self.set_logo(self.icontheme.load_icon(appname, 96, Gtk.IconLookupFlags.FORCE_SVG))
                 self.set_modal(True)
 		self.show()
 
 class MyApplication(Gtk.Application):
-	APPNAME = "boilerplate example"
+	APPNAME = "boilerplate"
 	SETTINGS_KEY = "apps.boilerplate"
 	def __init__(self):
 		Gtk.Application.__init__(self)
