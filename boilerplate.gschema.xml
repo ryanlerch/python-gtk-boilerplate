@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <schema id="boilerplate.gschema" path="/org/boilerplate/boilerplate/">
+  <schema id="org.boilerplate.boilerplate" path="/org/boilerplate/boilerplate/">
     <key type="b" name="dark-theme">
       <default>false</default>
       <summary>Enable Dark Theme</summary>
