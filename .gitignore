@@ -1,0 +1,12 @@
+autom4te.cache/
+aclocal.m4
+config.log
+config.status
+configure
+install-sh
+Makefile
+Makefile.in
+missing
+py-compile
+src/sampleapp
+data/org.sampleapp.sampleapp.desktop

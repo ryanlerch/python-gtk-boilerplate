@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Sample Application
+Comment=Say Hello to a sampleapp
+Exec=@prefix@/bin/sampleapp
+Icon=org.sampleapp.sampleapp
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;Utility;
